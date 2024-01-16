@@ -1,6 +1,9 @@
 ﻿using Homework1.BankAccount;
 using Homework1.CalculationUtility;
+using Homework1.CustomCollection_HomeWork3;
+using Homework1.Observerlesson;
 using Homework1.Shopping_System;
+using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -14,14 +17,24 @@ namespace Homework1
     {
         static void Main(string[] args)
         {
-            List<Product> products = new List<Product>();
-            Product product1 = new Product.ProductBuilder().GivePrice(500).GiveName("Apple").Build();
-            Product product2 = new Product.ProductBuilder().GivePrice(400).GiveName("pinApple").Build();
-            products.Add(product1);
-            products.Add(product2);
-            ShopingCart cart = new ShopingCart(products);
-            Order order = cart.Checkout(PriceCalculator.RegularCustomerDiscount);
-            order.PrintAllProducts();
+            MessageMaker m = new MessageMaker();
+            CustomStack<int> slave = new CustomStack<int>();
+            slave.AddElement += m.AddMessage;
+            slave.RemoveElement += m.RemoveMessage;
+            slave.Push(1);
+            slave.Push(2);
+            slave.Push(3);
+            slave.Push(4);
+            slave.Push(5);
+            slave.Pop();
+            slave.Pop();
+            slave.Pop();
+            slave.Pop();
+            slave.Pop();
+            Console.WriteLine(slave.Peek());
+            
         }
+
+       
     }
 }
