@@ -55,10 +55,11 @@
     <Compile Include="CalculationUtility\CalculationForStrings.cs" />
     <Compile Include="CalculationUtility\Calculator.cs" />
     <Compile Include="CalculationUtility\ICalculationUtility.cs" />
-    <Compile Include="Class1.cs" />
     <Compile Include="CustomCollection_HomeWork3\CustomStack.cs" />
     <Compile Include="CustomCollection_HomeWork3\MessageMaker.cs" />
-    <Compile Include="Itest.cs" />
+    <Compile Include="ExceptionHandling\AverageCounter.cs" />
+    <Compile Include="ExceptionHandling\FileHandler.cs" />
+    <Compile Include="Indexer\Matrix.cs" />
     <Compile Include="Observerlesson\BitCoinReader.cs" />
     <Compile Include="Observerlesson\EmailObserver.cs" />
     <Compile Include="Observerlesson\Iobservable.cs" />

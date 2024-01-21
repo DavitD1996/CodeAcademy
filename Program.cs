@@ -1,6 +1,8 @@
 ﻿using Homework1.BankAccount;
 using Homework1.CalculationUtility;
 using Homework1.CustomCollection_HomeWork3;
+using Homework1.ExceptionHandling;
+using Homework1.Indexer;
 using Homework1.Observerlesson;
 using Homework1.Shopping_System;
 using Microsoft.Win32;
@@ -17,22 +19,9 @@ namespace Homework1
     {
         static void Main(string[] args)
         {
-            MessageMaker m = new MessageMaker();
-            CustomStack<int> slave = new CustomStack<int>();
-            slave.AddElement += m.AddMessage;
-            slave.RemoveElement += m.RemoveMessage;
-            slave.Push(1);
-            slave.Push(2);
-            slave.Push(3);
-            slave.Push(4);
-            slave.Push(5);
-            slave.Pop();
-            slave.Pop();
-            slave.Pop();
-            slave.Pop();
-            slave.Pop();
-            Console.WriteLine(slave.Peek());
-            
+            Matrix a = new Matrix(2, 3);
+            a[0, 1] = 1;
+            Console.WriteLine(a[5, 1]);
         }
 
        
