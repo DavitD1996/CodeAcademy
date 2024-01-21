@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Homework1
+namespace Homework1.CustomConversion
 {
-    internal interface Itest<T>
+    internal class Vector
     {
-        T test();
     }
 }
