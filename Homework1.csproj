@@ -59,6 +59,9 @@
     <Compile Include="CustomCollection_HomeWork3\MessageMaker.cs" />
     <Compile Include="CustomConversion\Coordinate.cs" />
     <Compile Include="CustomConversion\Vector.cs" />
+    <Compile Include="EmployeeManagement\Employee.cs" />
+    <Compile Include="EmployeeManagement\ReflectionMakers.cs" />
+    <Compile Include="EmployeeManagement\SalaryValidationAttribute.cs" />
     <Compile Include="ExceptionHandling\AverageCounter.cs" />
     <Compile Include="ExceptionHandling\FileHandler.cs" />
     <Compile Include="Indexer\Matrix.cs" />
